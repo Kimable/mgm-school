@@ -1,0 +1,48 @@
+.heroContainer,
+.aboutSectionContainer {
+  background-color: var(--light);
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.textContainer {
+  flex-basis: 45%;
+}
+
+.imageContainer {
+  flex-basis: 50%;
+}
+
+/* Curriculum Section */
+.curriculumSection {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 450px;
+}
+/* About Section */
+.aboutSection {
+  background-color: var(--light);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+@media only screen and (max-width: 798px) {
+  .heroContainer {
+    padding-top: 2rem;
+  }
+  .hero,
+  .aboutSection {
+    flex-direction: column;
+  }
+  .textContainer,
+  .imageContainer {
+    flex-basis: 100%;
+  }
+}
