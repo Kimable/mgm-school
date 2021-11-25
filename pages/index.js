@@ -32,7 +32,12 @@ export default function Home() {
                 </Link>
               </div>
               <div className={styles.imageContainer}>
-                <Image src="/img/Learning-cuate.png" width={500} height={500} />
+                <Image
+                  src="/img/Learning-cuate.png"
+                  width={500}
+                  height={500}
+                  alt="Student Learning"
+                />
               </div>
             </div>
           </div>
@@ -59,6 +64,7 @@ export default function Home() {
                   src="/img/Questions-amico.png"
                   width={500}
                   height={500}
+                  alt="About MGM illustration"
                 />
               </div>
               <div className={styles.textContainer}>
