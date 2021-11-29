@@ -1,3 +1,7 @@
+.logo img {
+  width: 100px;
+}
+
 .navigation {
   background-color: #e5e5e5;
   padding: 0 3rem;
@@ -25,6 +29,9 @@
 }
 
 @media only screen and (max-width: 798px) {
+  .logo img {
+    width: 70px;
+  }
   .menu {
     display: block;
     cursor: pointer;

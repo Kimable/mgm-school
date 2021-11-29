@@ -8,12 +8,6 @@ export default function Home() {
     <>
       <Head>
         <title>MGM Boys School</title>
-        <meta name="description" content="We are MGM Boys School" />
-        <link rel="icon" href="/img/mgm-logo.png" />
-        <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-        />
       </Head>
 
       <main>
@@ -24,7 +18,7 @@ export default function Home() {
                 <div className="headerLine"></div>
                 <h1>Learn With Us</h1>
                 <p>
-                  Learning has nrver been Easier. Choose MGM Boys Academy to
+                  Learning has never been Easier. Choose MGM Boys Academy to
                   experience infinite possibilities
                 </p>
                 <Link href="/about">

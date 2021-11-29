@@ -21,12 +21,7 @@ export default function Nav() {
           <div className="navWrapper">
             <div className="logo-container">
               <div className="logo">
-                <Image
-                  src="/img/mgm-logo.png"
-                  height={90.68}
-                  width={100}
-                  alt="MGM School Logo"
-                />
+                <img src="/img/mgm-logo.png" alt="MGM School Logo" />
               </div>
             </div>
             <div className="navLinks">
