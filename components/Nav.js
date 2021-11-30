@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Nav() {
-  const [menu, setMenu] = React.useState("navLinksToggleNone");
-  const [menuIcon, setMenuIcon] = React.useState(true);
+  const [menu, setMenu] = useState("navLinksToggleNone");
+  const [menuIcon, setMenuIcon] = useState(true);
 
   const menuToggle = () => {
     menu === "navLinksToggleNone"
@@ -12,6 +11,11 @@ export default function Nav() {
       : setMenu("navLinksToggleNone");
 
     menuIcon === true ? setMenuIcon(false) : setMenuIcon(true);
+  };
+
+  const closeNav = () => {
+    setMenu("navLinksToggleNone");
+    setMenuIcon(true);
   };
 
   return (
@@ -39,34 +43,34 @@ export default function Nav() {
       </nav>
       {/* For mobile Phones */}
       <div className={menu}>
-        <NavLinks />
+        <NavLinks close={closeNav} />
       </div>
     </>
   );
 }
 
 // Nav Components
-function NavLinks() {
+function NavLinks({ close }) {
   return (
     <>
       <Link href="/about">
-        <a>About Us</a>
+        <a onClick={close}>About Us</a>
       </Link>
 
       <Link href="/admission">
-        <a>Admissions</a>
+        <a onClick={close}>Admissions</a>
       </Link>
 
       <Link href="/curriculum">
-        <a>Curriculum</a>
+        <a onClick={close}>Curriculum</a>
       </Link>
 
       <Link href="/contact">
-        <a>Contact Us</a>
+        <a onClick={close}>Contact Us</a>
       </Link>
 
       <Link href="/">
-        <a>Home</a>
+        <a onClick={close}>Home</a>
       </Link>
     </>
   );

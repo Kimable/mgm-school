@@ -18,8 +18,9 @@ export default function Home() {
                 <div className="headerLine"></div>
                 <h1>Learn With Us</h1>
                 <p>
-                  Learning has never been Easier. Choose MGM Boys Academy to
-                  experience infinite possibilities
+                  Learning has never been Easier and more inclusive! At MGM Boys
+                  Academy, We take pride in helping each child achieve their
+                  optimum potential and set them for success in life.
                 </p>
                 <Link href="/about">
                   <a className="btn">Learn More</a>
@@ -43,9 +44,15 @@ export default function Home() {
             <p>
               The new competency based curriculum is going to transform
               education in Kenya and we are happy to be using it to enable our
-              students achieve their dreams.
+              students achieve their dreams. We also offer the 8-4-4 curriculum
+              as the CBC curriculum continues to be rolled out so that no child
+              is left behind.
             </p>
-            <a href="#" className="btn">
+            <a
+              href="https://kicd.ac.ke/cbc-materials/curriculum-designs/"
+              className="btn"
+              target="_blank"
+            >
               Learn More About CBC
             </a>
           </div>
