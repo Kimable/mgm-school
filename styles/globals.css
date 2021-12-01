@@ -16,6 +16,7 @@ body {
   --light: #e5e5e5;
   --orange: #ff220e;
   --blue: #2d318b;
+  --blueVariant: hsl(237, 50%, 16%);
 }
 
 a {
@@ -59,6 +60,22 @@ a {
   height: 3px;
   background-color: var(--orange);
 }
+.headerLineCenter {
+  width: 10rem;
+  height: 3px;
+  background-color: var(--orange);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-sec {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .centerContent {
   display: flex;
@@ -79,6 +96,9 @@ a {
 
 @import "Nav.css";
 @import "footer.css";
+/* Form Styles */
+@import "form.css";
+@import "admission.css";
 
 @media only screen and (max-width: 798px) {
   h1 {
